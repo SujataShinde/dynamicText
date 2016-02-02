@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="2_column.css">
+	<script src="2_column.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+<script>var myFirebaseRef = new Firebase("https://dynamicdemo.firebaseio.com/");</script>
+<script>
+	myFirebaseRef.child("key4").on("value", function(snapshot) {
+	var tex1 = snapshot.val();  
+	document.getElementById("id1").innerHTML = tex1 + '<a href="readmore.html">Read More</a>';
+});
+	myFirebaseRef.child("key1").on("value", function(snapshot) {
+	var tex2 = snapshot.val();  
+	document.getElementById("id2").innerHTML = tex2 + '<a href="readmore.html">Read More</a>';
+});
+	myFirebaseRef.child("key2").on("value", function(snapshot) {
+	var tex3 = snapshot.val(); 
+	document.getElementById("id3").innerHTML = tex3 + '<a href="readmore.html">Read More</a>';
+});
+	myFirebaseRef.child("key3").on("value", function(snapshot) {
+	var tex4 = snapshot.val();  
+	document.getElementById("id4").innerHTML = tex4 + '<a href="readmore.html">Read More</a>';
+});
+	
+</script>
+</head>
+
+<body>
+
+<div class="header"> 
+<center><h1>SEARS HOLDINGS <br>INDIA</br></h1></br> </center>
+</div>
+
+
+<div class="container">
+	<div class="sidebar">
+	<div>
+		<div class = "image1">
+			<img src="sears2.jpg">
+		</div>
+				<div class ="text">
+				
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+					consequat. 
+				</div>
+	</div>
+	<br/>
+	<div>
+			<div class = "image1">
+			<img src="sears2.jpg"> 
+			</div>
+				<div class ="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+					magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+					consequat. 
+				</div>
+	
+	</div>
+	</div>
+	<div class="content">
+		
+			<div class="text1" id="id1"></div>				
+			<div class="text1" id="id2"></div>							
+			<div class="text1" id="id3"></div>	
+			<div class="text1" id="id4"></div>		
+			
+	</div>
+</div>
+
+<div class="footer">
+<div class="foot1">
+<h3>Sears Address</h3>
+<p><i class="fa fa-home"><strong> Address : </strong></i>EON Free Zone, Kharadi, Pune, Maharashtra 411014 </p>
+<p><i class="fa fa-phone"><strong> Phone : </strong></i>   020 6730 4000</p>
+</div>
+<div class="foot2">
+<h3>Contact Us</h3>
+			
+<form name="form1" onsubmit="return validateContact()">
+	<input type="text" name="name" placeholder="Name"/><br>
+		
+	<input type="text" name="email" placeholder="Email" /><br>
+	<textarea rows="3" cols="25" name="msg" placeholder=" Type your message">
+	</textarea>		
+ <br>
+	<input type="submit" value="Submit"/>
+	<p id ="msg1"></p>
+	</form>
+
+
+
+</div>
+
+</div>
+
+</body>
+</html>

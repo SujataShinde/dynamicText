@@ -1,0 +1,158 @@
+
+.header{
+	
+	height:110px;
+	box-sizing: border-box;
+}
+
+.footer{
+	clear:both;
+	height:100%; 
+	bottom: 0px;
+	margin:2px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	
+}
+.header, .footer {
+	width:100%;
+	border:1px solid black;
+	border-radius: 10px;
+	background-color: darkorange;
+}
+ .sidebar, .Header, .footer, 
+.container,.content {
+	font-family: Play-Bold;
+	font-size: 20px;
+	font-style: bold;
+}
+
+.container{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	border:1px solid black;  
+	background-color: white; 
+	border-radius: 5px;
+	
+}
+.text3 {
+width: 100%;
+height: 100%;
+text-align: justify;
+}
+.sidebar{
+	box-sizing: border-box;
+	flex-grow:1;
+	height:auto; 
+	width: 40%;
+	border:1px solid black;  
+	background-color: white; 
+	float:left;
+	padding:10px;
+	border-radius: 10px;
+}
+
+
+.image1{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+.text,.text1{ 
+		text-align: justify;
+		
+	}
+	
+.text1{
+		border: 1px solid black;  
+		border-radius: 20px;
+		width:93%;
+		margin: 20px 20px 20px 20px;
+		padding: 10px;
+		flex-grow:1;
+	    box-sizing: border-box;
+		 white-space: nowrap; 
+		width: 30em; 
+		height: 8em;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+	}
+	.content{
+	flex-grow:1;
+	box-sizing: border-box;
+	width: 60%;
+	height: auto;
+	border: 1px solid black;  
+	background-color: white; 
+	padding:5px;
+	float:right;
+	border-radius: 5px;
+	text-align: justify;
+}
+.foot1,.foot2{
+box-sizing: border-box;
+	flex-grow:1;
+	height: auto;
+	padding:5px;
+	
+	
+}
+.foot1{
+width:50%;
+	border: 1px solid black;  
+float:left;
+
+}
+.foot2{
+	border: 1px solid black;  
+width:50%;
+float:right;
+color: black;
+
+}
+
+#page-wrap {
+	width: 20%;
+	background: darkorange;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	color:black;
+	
+}
+
+#contact-area {
+	box-sizing: border-box;
+	flex-grow:1;
+	color:black;
+}
+	
+a{
+position: relative;
+float: right;
+}
+@media screen and (max-width: 540px) {
+
+.container {
+	clear:both;
+}
+} 
+
+
+@media screen and (max-width: 900px) {
+	.sidebar, .content{
+		width: 50%;	
+		margin-left:20px;
+	}
+} 
+
+@media screen and (max-width: 740px) {
+	.sidebar, .content{
+		clear:both;
+		padding:20px;
+		width: 60%;	
+		margin-left:20px;
+	}
+} 
