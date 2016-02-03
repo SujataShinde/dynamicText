@@ -52,6 +52,7 @@ text-align: justify;
 	float:left;
 	padding:10px;
 	border-radius: 10px;
+	background: lightgray;
 }
 
 .content{
@@ -65,6 +66,7 @@ text-align: justify;
 	float:right;
 	border-radius: 5px;
 	text-align: justify;
+	background: gray;
 }
 .image1{
 	display:flex;
@@ -88,6 +90,7 @@ text-align: justify;
 		height: 10em;
 		overflow: hidden;
 		text-overflow: ellipsis; 
+		background: lightgray;
 		
 	}
 	.text3
@@ -100,6 +103,7 @@ text-align: justify;
 		padding: 10px;
 		flex-grow:1;
 	    box-sizing: border-box;
+		background: lightgray;
 	}
 .foot1,.foot2{
 box-sizing: border-box;
