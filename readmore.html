@@ -3,15 +3,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="2_column.css">
 	<script src="2_column.js"></script>
+	
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-<script>var myFirebaseRef = new Firebase("https://dynamicdemo.firebaseio.com/");</script>
-<script>
-	myFirebaseRef.child("key4").on("value", function(snapshot) {
-	var tex1 = snapshot.val();  
-	document.getElementById("id").innerHTML = tex1; 
-});
-</script>
+<script src="page2.js"></script>
 </head>
 
 <body>
@@ -21,7 +16,7 @@
 </div>
 
 <div class="container">
-<div class="text3" id="id">
+<div class="text3" id="news1">
 	</div>
 </div>
 <div class="footer">
