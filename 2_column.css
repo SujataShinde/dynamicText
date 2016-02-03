@@ -54,32 +54,7 @@ text-align: justify;
 	border-radius: 10px;
 }
 
-
-.image1{
-	display:flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
-}
-.text,.text1{ 
-		text-align: justify;
-		
-	}
-	
-.text1{
-		border: 1px solid black;  
-		border-radius: 20px;
-		width:93%;
-		margin: 20px 20px 20px 20px;
-		padding: 10px;
-		flex-grow:1;
-	    box-sizing: border-box;
-		 white-space: nowrap; 
-		width: 30em; 
-		height: 8em;
-		overflow: hidden;
-		text-overflow: ellipsis; 
-	}
-	.content{
+.content{
 	flex-grow:1;
 	box-sizing: border-box;
 	width: 60%;
@@ -91,6 +66,41 @@ text-align: justify;
 	border-radius: 5px;
 	text-align: justify;
 }
+.image1{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+.text,.text1{ 
+		text-align: justify;
+			}
+	
+.text1{
+		border: 1px solid black;  
+		border-radius: 20px;
+		width:100;
+		margin: 20px 20px 20px 20px;
+		padding: 10px;
+		flex-grow:1;
+	    box-sizing: border-box;
+		white-space: nowrap; 
+		width: 37em; 
+		height: 10em;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+		
+	}
+	.text3
+	{
+	    border: 1px solid black;  
+		border-radius: 20px;
+		width:100%;
+		height:auto;
+		margin: 20px 20px 20px 20px;
+		padding: 10px;
+		flex-grow:1;
+	    box-sizing: border-box;
+	}
 .foot1,.foot2{
 box-sizing: border-box;
 	flex-grow:1;
@@ -138,13 +148,21 @@ float: right;
 .container {
 	clear:both;
 }
+.text1 {
+	width: 50%;
+	height: auto;
+	}
 } 
 
 
-@media screen and (max-width: 900px) {
-	.sidebar, .content{
+@media screen and (max-width: 1270px) {
+	.sidebar, .content,.text1{
 		width: 50%;	
 		margin-left:20px;
+	}
+	.text1 {
+	width: 90%;
+	height: auto;
 	}
 } 
 
@@ -155,4 +173,5 @@ float: right;
 		width: 60%;	
 		margin-left:20px;
 	}
+	
 } 

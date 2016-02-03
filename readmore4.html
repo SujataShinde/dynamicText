@@ -7,7 +7,7 @@
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 <script>var myFirebaseRef = new Firebase("https://dynamicdemo.firebaseio.com/");</script>
 <script>
-	myFirebaseRef.child("key4").on("value", function(snapshot) {
+	myFirebaseRef.child("key3").on("value", function(snapshot) {
 	var tex1 = snapshot.val();  
 	document.getElementById("id").innerHTML = tex1; 
 });
