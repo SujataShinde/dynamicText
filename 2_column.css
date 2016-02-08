@@ -19,7 +19,7 @@
 	width:100%;
 	border:1px solid black;
 	border-radius: 10px;
-	background-color: darkorange;
+	background-color:#ff8533;
 }
  .sidebar, .Header, .footer, 
 .container,.content {
@@ -52,7 +52,7 @@ text-align: justify;
 	float:left;
 	padding:10px;
 	border-radius: 10px;
-	background: lightgray;
+	background: #e6e6e6;
 }
 
 .content{
@@ -66,7 +66,7 @@ text-align: justify;
 	float:right;
 	border-radius: 5px;
 	text-align: justify;
-	background: gray;
+	background: #cccccc;
 }
 .image1{
 	display:flex;
@@ -90,7 +90,7 @@ text-align: justify;
 		height: 10em;
 		overflow: hidden;
 		text-overflow: ellipsis; 
-		background: lightgray;
+		background: #f5efef;
 		
 	}
 	.text3
@@ -103,28 +103,26 @@ text-align: justify;
 		padding: 10px;
 		flex-grow:1;
 	    box-sizing: border-box;
-		background: lightgray;
+		background: #f5efef;
 	}
-.foot1,.foot2{
+.foot1,.foot2,.msg1, #msg2, #but1{
 box-sizing: border-box;
 	flex-grow:1;
 	height: auto;
 	padding:5px;
-	
-	
 }
 .foot1{
 width:50%;
-	border: 1px solid black;  
 float:left;
+padding-left: 20px;
 
 }
 .foot2{
-	border: 1px solid black;  
-width:50%;
-float:right;
-color: black;
-
+ 
+	width: 50%;
+	float:right;
+	color: black;
+	padding-left: 250px;
 }
 
 #page-wrap {
@@ -136,7 +134,21 @@ color: black;
 	color:black;
 	
 }
+.msg1 {
+height:20px;
+width:240px;
 
+}
+#msg2 {
+height:40px;
+width:240px;
+
+}
+#but1 {
+height:30px;
+
+width:90px;
+}
 #contact-area {
 	box-sizing: border-box;
 	flex-grow:1;
@@ -166,16 +178,33 @@ float: right;
 	}
 	.text1 {
 	width: 90%;
+	margin: auto;
 	height: auto;
 	}
+	
 } 
-
+@media screen and (max-width: 1000px) {
+.foot2,.msg1,#msg2,#but1{
+	width:auto;
+	float:left;
+	padding-left:10px;
+	}
+}
 @media screen and (max-width: 740px) {
 	.sidebar, .content{
 		clear:both;
 		padding:20px;
 		width: 60%;	
-		margin-left:20px;
+		margin: auto;
+	}
+	.foot2,.msg1,#msg2,#but1{
+	width:auto;
+	float:left;
+	}
+	.foot2{
+	margin:0px;
+	padding-left:10px;
+	clear:both;
 	}
 	
 } 
